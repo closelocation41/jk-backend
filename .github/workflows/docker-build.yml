@@ -1,15 +1,13 @@
 name: Build and Push Docker Image to AWS ECR
 
-name: Build and Push Docker Image to AWS ECR
-
 on:
   push:
     branches:
       - main  # Trigger workflow on push to 'main' branch
 
 env:
-  AWS_REGION: ap-south-1 # Change to your AWS region
-  ECR_REPOSITORY: jk-backend # Change to your ECR repository name
+  AWS_REGION: ap-south-1  # ✅ AWS Mumbai region
+  ECR_REPOSITORY: jk-backend
   IMAGE_TAG: latest
 
 jobs:
